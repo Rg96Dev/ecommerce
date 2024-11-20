@@ -1,5 +1,38 @@
-$bgColor:#2fff00;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+@import './variables';
+@import './hero';
+@import './layount';
+
+
+body {
     background-color: $bgColor;
 }
+
+
+
+
+// //mixin padronização de texto:
+// @mixin text($fontSize:16px) {
+//     font-size: $fontSize;
+// }
+
+// //classe de titulo principal
+// .title{
+//     @include text(16px);
+//     color:$colorTitle;
+// }
+
+// .text{
+//     @include text(14px);
+//     color: $colorText;
+// }
+
+// .text--small{
+//     @include text(16px);
+//     color: $colorTitle;
+// }
