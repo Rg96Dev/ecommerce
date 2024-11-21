@@ -3,11 +3,14 @@
 //estilização dos links
 @mixin links () {
     padding: 10px 20px;
+    margin: 16px;
     color: $bgColor;
     text-decoration: none;
     border-radius: 100em;
     cursor: pointer;
-    font-size: 16px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 20px;
     position: absolute;
 }
 
@@ -27,9 +30,13 @@
 
             h1 {
                 font-size: 24px;
+                font-family: "Sora", serif;
+                margin: 16px;
+                white-space: nowrap;
 
                 span {
                     display: block;
+                    font-family: "Bebas Neue", serif;
                     font-size: 36px;
                     font-weight: bold;
                 }
@@ -47,7 +54,7 @@
 
 /* Seção Earphone */
 .earphone {
-    background-color: $colorTextButoon;
+    background-color: $productBlack;
     border-radius: 5%;
 
     .content h1 span {
@@ -58,6 +65,13 @@
     a {
         @include links();
         background-color: $colorButton;
+
+
+        &:hover {
+            background-color: $colorHoverWhite;
+            color: $colorTextRed;
+            border: 2px solid $colorTextRed;
+        }
     }
 }
 
@@ -68,16 +82,22 @@
 
     .content h1 span {
         color: #000;
+        
 
     }
 
     a {
         @include links();
-        background-color: $bgColor;
-        color: #000;
+        background-color: $colorHoverWhite;
+        color: $colorTextButoon;
+
+        &:hover {
+            background-color: #f1d84c;
+            border: 2px solid $colorTextButoon;
+        }
+
     }
 }
-
 
 /* Seção Laptop */
 .laptop {
@@ -93,7 +113,12 @@
         @include links();
         background-color: $bgColor;
         color: $colorTextButoon;
+
+        &:hover {
+            background-color: #000;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
     }
 
 }
-

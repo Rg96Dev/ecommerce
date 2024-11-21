@@ -7,47 +7,55 @@
     padding: 50px;
     background-color: $bgHero;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.hero-content {
-    max-width: 50%;
-}
+    .hero-content {
+        max-width: 50%;
 
-.hero-content h1 {
-    font-size: 48px;
-    margin: 0;
-}
+        h1 {
+            font-family: "Sora", serif;
+            font-size: 48px;
+            margin: 0;
 
-.hero-content h1 span {
-    display: block;
-    font-size: 72px;
-    font-weight: bold;
-}
+            span {
+                font-family: "Bebas Neue", serif;
+                display: block;
+                font-size: 72px;
+                font-weight: bold;
+            }
+        }
 
-.hero-content p {
-    margin: 20px 0;
-    color: $colorTextHero;
-}
+        p {
+            font-family: "Bebas Neue", serif;
+            margin: 20px 0;
+            color: $colorTextHero;
+        }
 
-.hero-content a {
-    padding: 10px 20px;
-    background-color:$colorButton;
-    color: $bgColor;
-    text-decoration: none;
-    border-radius: 100em;
-    cursor: pointer;
-    font-size: 16px;
-
-    &:hover{
-        background-color: #000000;
+        a {
+            padding: 10px 20px;
+            background-color:$colorButton;
+            color: $bgColor;
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            text-decoration: none;
+            border-radius: 100em;
+            cursor: pointer;
+            font-size: 16px;
+        
+            &:hover{
+                background-color: #000000;
+            }
+        }
+        
+        
     }
+    
 }
 
 .hero-image {
     max-width: 50%;
-}
 
-.hero-image img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
+    
 }
-

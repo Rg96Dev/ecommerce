@@ -1,0 +1,75 @@
+@import './variables';
+
+@mixin flex () {
+    display: flex;
+    justify-content: center;
+    margin:32px 24px;
+}
+
+.shop {
+    padding: 0 2%;
+
+    h1{
+        @include flex();
+        text-transform: uppercase;
+    }
+
+    &__tabs{
+        @include flex();
+        gap: 24px;
+
+        &__button{
+            background-color: $bgColor;
+            color: $colorTextButoon;
+            font-size: 20px;
+            border: none;
+            border-bottom: 5px solid $colorTextButoon;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            margin:  0 1vw;
+        }
+    }
+
+
+    &__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+        list-style-type: none;
+
+        &__item {
+
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+
+            }
+
+            h2{
+                text-transform: uppercase;
+                margin: 16px;
+                cursor: pointer;
+            }
+
+            a {
+                padding: 8px 16px;
+                background-color: $colorButton;
+                color: $bgColor;
+                font-family: "Bebas Neue", serif;
+                font-weight: 400;
+                text-decoration: none;
+                border-radius: 10em;
+                cursor: pointer;
+                font-size: 16px;
+                opacity: 0;
+                transform:opacity 0.3s ease-out;
+
+
+                &:hover{
+                opacity: 1;
+                }
+
+            }
+        }
+    }
+}
