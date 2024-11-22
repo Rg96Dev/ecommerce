@@ -23,20 +23,31 @@
             color: $colorTextButoon;
             font-size: 20px;
             border: none;
-            border-bottom: 5px solid $colorTextButoon;
+            
             padding-bottom: 5px;
             text-transform: uppercase;
             margin:  0 1vw;
+
+            //propriedade que ativa o menu selecionado
+            &--is-active{
+                border-bottom: 5px solid $colorTextButoon;
+            }
         }
     }
 
 
     &__nav {
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 24px;
         list-style-type: none;
 
+
+        &--is-active{
+            display: grid;
+        }
+
+        
         &__item {
 
             img {
