@@ -11,6 +11,8 @@
 
     h1{
         @include flex();
+        font-family: "Sora", serif;
+        font-size: 32px;
         text-transform: uppercase;
     }
 
@@ -21,16 +23,17 @@
         &__button{
             background-color: $bgColor;
             color: $colorTextButoon;
-            font-size: 20px;
+            font-family: "Bebas Neue", serif;
+            font-size: 24px;
             border: none;
-            
             padding-bottom: 5px;
             text-transform: uppercase;
-            margin:  0 1vw;
+            margin:  0 1vw;cursor:pointer;
+            border-bottom: 5px solid transparent;
 
             //propriedade que ativa o menu selecionado
             &--is-active{
-                border-bottom: 5px solid $colorTextButoon;
+                border-color: $colorTextButoon;
             }
         }
     }
@@ -72,13 +75,6 @@
                 border-radius: 10em;
                 cursor: pointer;
                 font-size: 16px;
-                opacity: 0;
-                transform:opacity 0.3s ease-out;
-
-
-                &:hover{
-                opacity: 1;
-                }
 
             }
         }

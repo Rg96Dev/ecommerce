@@ -61,12 +61,18 @@
     <section class="shop">
         <h1>Nossos Produtos</h1>
         <nav class="shop__tabs">
-            <button class="shop__tabs__button shop__tabs__button--is-active">headfones bluetooth</button>
-            <button class="shop__tabs__button">headfone com fio</button>
-            <button class="shop__tabs__button">notbooks</button>
+            <button data-tab-button="headfone" class="shop__tabs__button shop__tabs__button--is-active">
+                headfones bluetooth
+            </button>
+            <button data-tab-button="com_fio" class="shop__tabs__button">
+                headfone com fio
+            </button>
+            <button data-tab-button="notbook" class="shop__tabs__button">
+                notbooks
+            </button>
         </nav>
         <!-- headfones bluetooth -->
-        <ul class="shop__nav shop__nav--is-active">
+        <ul data-tab-id="headfone" class="shop__nav shop__nav--is-active">
             <li class="shop__nav__item"">
                 <img src=" ./dist/images/product_1.jpg" alt="imagem de um headfone">
                 <h2>headfone <br>
@@ -125,7 +131,7 @@
             </li>
         </ul>
         <!-- headfone com fio -->
-        <ul class="shop__nav shop__nav--is-active">
+        <ul  data-tab-id="com_fio" class="shop__nav">
             <li class="shop__nav__item"">
                 <img src="./dist/images/produt_2.jpg" alt="imagem de um headfone">
                 <h2>headfone com fio <br>
@@ -161,7 +167,7 @@
                 </h2>
                 <a href="#">Adicionar ao carrinho</a>
             </li>
-            <li class="shop__nav__item shop__nav__item--is-active">
+            <li class="shop__nav__item ">
                 <img src="./dist/images/produt_2.jpg" alt="imagem de um headfone">
                 <h2>headfone com fio <br>
                     R$100,00
@@ -183,9 +189,8 @@
                 <a href="#">Adicionar ao carrinho</a>
             </li>
         </ul>
-
         <!-- notbooks -->
-        <ul class="shop__nav shop__nav--is-active">
+        <ul  data-tab-id= "notbook" class="shop__nav ">
             <li class="shop__nav__item"">
                 <img src="./dist/images/product_3.jpg" alt="imagem de um notbook">
                 <h2>notbook <br>
@@ -244,6 +249,7 @@
             </li>
         </ul>
     </section>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
