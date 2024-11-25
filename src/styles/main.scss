@@ -8,6 +8,7 @@
 @import './hero';
 @import './layout';
 @import  './_shop';
+@import  './_faq';
 
 body {
     background-color: $bgColor;
@@ -16,23 +17,3 @@ body {
 
 
 
-// //mixin padronização de texto:
-// @mixin text($fontSize:16px) {
-//     font-size: $fontSize;
-// }
-
-// //classe de titulo principal
-// .title{
-//     @include text(16px);
-//     color:$colorTitle;
-// }
-
-// .text{
-//     @include text(14px);
-//     color: $colorText;
-// }
-
-// .text--small{
-//     @include text(16px);
-//     color: $colorTitle;
-// }
