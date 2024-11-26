@@ -1,0 +1,22 @@
+.footer {
+    padding: 7% 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    p {
+        color: rgba(0, 0, 0, .6);
+        font-family: "Bebas Neue", serif;
+        font-size: 16px;
+        font-weight: 400;
+        white-space: pre-line;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+        padding: 8px;
+    }
+}
