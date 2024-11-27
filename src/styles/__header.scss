@@ -1,0 +1,102 @@
+@import './variables';
+
+@mixin display ($gap: 15px) {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $bgColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+
+    z-index: 1;
+
+    &--is-hidden {
+        background-color: transparent;
+
+        .header {
+
+            &__nav {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+
+    &__nav {
+        display: flex;
+
+        .header__links {
+            @include display ();
+
+            &__item {
+                a {
+                    font-family: "Sora", serif;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 16px;
+                    transition: opacity .5s ease;
+
+                    &:hover {
+                        color: #555; // Cor ao passar o mouse
+                    }
+                }
+            }
+        }
+    }
+
+    &__login {
+        display: flex;
+
+        ul {
+            @include display ();
+
+            .login {
+                padding: 8px 16px;
+                background-color: $colorButton;
+                color: #000;
+                font-family: "Sora", serif;
+                text-decoration: none;
+                border-radius: 100em;
+                cursor: pointer;
+                font-size: 16px;
+
+                &:hover {
+                    background-color: #555;
+                    color: black;
+                }
+            }
+        }
+
+        .header__login__icon {
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+                font-size: 16px;
+
+                i {
+                    font-size: 20px; // Ajuste do tamanho do ícone
+                    margin-right: 5px; // Espaço entre o ícone e o texto
+                }
+
+                &:hover {
+                    color: $colorButton; // Cor ao passar o mouse
+                }
+            }
+        }
+    }
+}
